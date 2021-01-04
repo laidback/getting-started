@@ -1,0 +1,20 @@
+apiVersion: skaffold/v2beta10
+kind: Config
+metadata:
+  name: getting-started
+build:
+  insecureRegistries:
+    - localhost:5000
+  local:
+    push: true
+  artifacts:
+  - image: getting-started
+    context: .
+    buildpacks:
+      builder: gcr.io/buildpacks/builder:v1
+deploy:
+  kubectl:
+    manifests:
+    - k8s/mapping.yaml
+    - k8s/pod.yaml
+    - k8s/service.yaml

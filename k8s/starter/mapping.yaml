@@ -1,0 +1,9 @@
+---
+apiVersion: getambassador.io/v2
+kind:  Mapping
+metadata:
+  name: getting-started
+spec:
+  prefix: /getting-started/
+  service: getting-started.default:8080
+

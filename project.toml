@@ -1,0 +1,7 @@
+[project]
+id = "io.github.laidback.starter"
+name = "starter"
+version = "v1alpha1"
+authors = ["Lukas.Ciszewski@Gmail.com"]
+documentation-url = "https://github.com/laidback/getting-started"
+source-url = "https://github.com/laidback/getting-started"
